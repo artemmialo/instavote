@@ -19,5 +19,5 @@ spec:
     spec:
       containers:
       - image: redis:alpine
-        name: vote
+        name: redis
         resources: {}

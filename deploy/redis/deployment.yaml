@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: redis
+    app: vote
   name: redis
 spec:
   replicas: 1
@@ -15,7 +15,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: redis
+        app: vote
     spec:
       containers:
       - image: redis:alpine

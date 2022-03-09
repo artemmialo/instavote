@@ -1,9 +1,8 @@
-apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: vote
+    app: redis
   name: redis
 spec:
   replicas: 1
@@ -15,7 +14,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: vote
+        app: redis
     spec:
       containers:
       - image: redis:alpine

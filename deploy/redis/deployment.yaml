@@ -1,5 +1,7 @@
+apiVersion: apps/v1
 kind: Deployment
 metadata:
+  creationTimestamp: null
   labels:
     app: redis
   name: redis
@@ -7,12 +9,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: redis
+      app: vote
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: redis
     spec:
       containers:
       - image: redis:alpine
-        name: redis
+        name: vote
+        resources: {}

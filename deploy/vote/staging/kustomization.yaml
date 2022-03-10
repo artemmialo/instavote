@@ -22,3 +22,7 @@ commonLabels:
 
 commonAnnotations:
   supported-by: 'example@mail.com'
+
+configMapGenerator:
+  - name: vote-options
+    env: options.env
